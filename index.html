@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://london.hackspace.org.uk/cost-of-hacking/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+  <title>The Cost of Hacking – Hackeriet</title>
+  <link href="css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="base.css" type="text/css">
+	<script type="text/javascript" src="jsapi"></script><style type="text/css"></style>
+
+	<script type="text/javascript">
+	google.load("visualization", "1", {packages:["corechart"]});
+	google.setOnLoadCallback(drawCharts);
+	
+	function drawCharts() {
+		
+		// ===========
+		// = Balance =
+		// ===========
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', 'Month');
+		data.addColumn('number', 'Subscriptions');
+		data.addColumn('number', 'Expenses');
+		data.addColumn('number', 'Club Mate');
+		data.addColumn('number', 'T-Shirts');
+		data.addColumn('number', 'Kits');
+		data.addRows([
+				['Current', 1500, 6500, 240, 150, 250],
+		]);
+
+		var options = {
+			axisTitlesPosition: 'none',
+			legend: { position: 'top' },
+			hAxis: { viewWindow: { min: 0 } },
+			vAxis: { textPosition: 'none' },
+			chartArea: { left: 10, top: 30, width: "100%", height: "60%"},
+			fontSize: 16
+		};
+
+		var chart = new google.visualization.BarChart(document.getElementById('balance_div'));
+		chart.draw(data, options);
+
+		// ============
+		// = Expenses =
+		// ============
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', 'Item');
+		data.addColumn('number', 'Cost');
+		data.addRows([
+				['Rent kr 4.930', 6875],
+				//['Fiber internet kr 1.500', 1500],
+				['Mad Science Renovations kr 1.000', 1000],
+				/*
+				['Business Rates £1,576', 1576],
+				['Electricity £800', 800],
+				['Service Charge £400', 400],
+				['Reserve £500', 500],
+				['Supplies £200', 200],
+				['Rubbish £175', 175],
+				['Cleaner £80', 80],
+				['Gas £80', 80],
+				['Lift Maintenance £80', 80],
+				['Internet/Phone £95', 95],
+				['Reserve £500', 500],
+				['Rubbish £175', 175],
+				['Cleaner £80', 80],
+				['Gas £80', 80],
+				['Lift Maintenance £80', 80],
+				['Internet/Phone £95', 95],
+				*/
+		]);
+
+
+		var options = {
+		  // title: 'London Hackspace Budget',
+			chartArea: { left: 0, top: 5, width: "100%", height: "95%"},
+			fontSize: 16
+		};
+
+		var chart = new google.visualization.PieChart(document.getElementById('expenses_div'));
+		chart.draw(data, options);
+	}
+	</script><script src="saved_resource" type="text/javascript"></script><link href="ui+en.css" type="text/css" rel="stylesheet"><script src="format+en,default+en,ui+en,corechart+en.I.js" type="text/javascript"></script>
+<link href="tooltip.css" rel="stylesheet" type="text/css"></head>
+<body>
+	<div id="container">
+		<header role="banner" class="text">
+			<h1><img src="../logo/zha.png" width="60" height="60" alt="London Hackspace"> The Cost of Hacking</h1>
+      <p><strong>Hackeriet is entirely funded by your membership subscriptions &amp; donations.</strong></p>
+      <p>We've taken a massive leap in renovating and fitting out our space at Hausmania, and we're currently making a monthly loss and burning through our cash reserves.
+We are no longer sharing the space with other groups.
+      We can't spend more money on making the space more awesome until we're making a monthly surplus.</p>
+		</header>
+		
+		<div id="main" role="main" class="text">
+			<article>
+				<header>
+					<h2>Our Monthly Balance</h2>
+				</header>
+				<div id="balance_div" class="graph" style="width: 600px; height: 150px; position: relative;"><div dir="ltr" style="position: relative; width: 600px; height: 150px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="600" height="150" aria-label="A chart." aria-hidden="true" style="overflow: hidden;"><defs id="defs"><clippath id="_ABSTRACT_RENDERER_ID_0"><rect x="10" y="30" width="590" height="90"></rect></clippath></defs><rect x="0" y="0" width="600" height="150" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="10" y="9" width="358" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="10" y="9" width="179" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="32" y="22.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#222222">Subscriptions £11,864</text></g><rect x="10" y="9" width="16" height="16" stroke="none" stroke-width="0" fill="#3366cc"></rect></g><g><rect x="215" y="9" width="153" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="237" y="22.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#222222">Expenses £10,861</text></g><rect x="215" y="9" width="16" height="16" stroke="none" stroke-width="0" fill="#dc3912"></rect></g></g><g><rect x="10" y="30" width="590" height="90" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(#_ABSTRACT_RENDERER_ID_0)"><g><rect x="10" y="30" width="1" height="90" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="157" y="30" width="1" height="90" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="305" y="30" width="1" height="90" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="452" y="30" width="1" height="90" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="599" y="30" width="1" height="90" stroke="none" stroke-width="0" fill="#cccccc"></rect></g><g><rect x="11" y="47" width="581" height="27" stroke="none" stroke-width="0" fill="#3366cc"></rect><rect x="11" y="75" width="532" height="27" stroke="none" stroke-width="0" fill="#dc3912"></rect></g><g><rect x="10" y="30" width="1" height="90" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="middle" x="10.5" y="140.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#444444">0</text></g><g><text text-anchor="middle" x="157.75" y="140.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#444444">3,000</text></g><g><text text-anchor="middle" x="305" y="140.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#444444">6,000</text></g><g><text text-anchor="middle" x="452.25" y="140.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#444444">9,000</text></g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><tbody><tr><th>Month</th><th>Subscriptions £11,864</th><th>Expenses £10,861</th></tr>
+<tr><td>Current</td><td>11864.27</td><td>10861</td></tr>
+</tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 160px; left: 610px; white-space: nowrap; font-family: Arial; font-size: 16px;">Expenses kr 6.000</div><div></div></div>
+			</article>
+			<article>
+				<header>
+					<h2>Our Monthly Expenses</h2>
+				</header>
+				<div id="expenses_div" class="graph" style="width: 600px; height: 300px; position: relative;"><div dir="ltr" style="position: relative; width: 600px; height: 300px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="600" height="300" aria-label="A chart." aria-hidden="true" style="overflow: hidden;"><defs id="defs"></defs><rect x="0" y="0" width="600" height="300" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="397" y="5" width="203" height="276" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="397" y="5" width="203" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="419" y="18.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#222222">Rent £6,875</text></g><rect x="397" y="5" width="16" height="16" stroke="none" stroke-width="0" fill="#3366cc"></rect></g><g><rect x="397" y="31" width="203" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="419" y="44.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#222222">Business Rates £1,576</text></g><rect x="397" y="31" width="16" height="16" stroke="none" stroke-width="0" fill="#dc3912"></rect></g><g><rect x="397" y="57" width="203" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="419" y="70.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#222222">Electricity £800</text></g><rect x="397" y="57" width="16" height="16" stroke="none" stroke-width="0" fill="#ff9900"></rect></g><g><rect x="397" y="83" width="203" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="419" y="96.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#222222">Service Charge £400</text></g><rect x="397" y="83" width="16" height="16" stroke="none" stroke-width="0" fill="#109618"></rect></g><g><rect x="397" y="109" width="203" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="419" y="122.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#222222">Reserve £500</text></g><rect x="397" y="109" width="16" height="16" stroke="none" stroke-width="0" fill="#990099"></rect></g><g><rect x="397" y="135" width="203" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="419" y="148.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#222222">Supplies £200</text></g><rect x="397" y="135" width="16" height="16" stroke="none" stroke-width="0" fill="#0099c6"></rect></g><g><rect x="397" y="161" width="203" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="419" y="174.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#222222">Rubbish £175</text></g><rect x="397" y="161" width="16" height="16" stroke="none" stroke-width="0" fill="#dd4477"></rect></g><g><rect x="397" y="187" width="203" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="419" y="200.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#222222">Cleaner £80</text></g><rect x="397" y="187" width="16" height="16" stroke="none" stroke-width="0" fill="#66aa00"></rect></g><g><rect x="397" y="213" width="203" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="419" y="226.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#222222">Gas £80</text></g><rect x="397" y="213" width="16" height="16" stroke="none" stroke-width="0" fill="#b82e2e"></rect></g><g><rect x="397" y="239" width="203" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="419" y="252.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#222222">Lift Maintenance £80</text></g><rect x="397" y="239" width="16" height="16" stroke="none" stroke-width="0" fill="#316395"></rect></g><g><rect x="397" y="265" width="203" height="16" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="419" y="278.6" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#222222">Internet/Phone £95</text></g><rect x="397" y="265" width="16" height="16" stroke="none" stroke-width="0" fill="#994499"></rect></g></g><g><path d="M186,148L178.1998427689033,6.214395839457069A142,142,0,0,1,186,6L186,148A0,0,0,0,0,186,148" stroke="#ffffff" stroke-width="1" fill="#994499"></path></g><g><path d="M186,148L171.64859826769572,6.727082325316104A142,142,0,0,1,178.1998427689033,6.214395839457069L186,148A0,0,0,0,0,186,148" stroke="#ffffff" stroke-width="1" fill="#316395"></path></g><g><path d="M186,148L165.1280876106937,7.542307888769869A142,142,0,0,1,171.64859826769583,6.727082325316104L186,148A0,0,0,0,0,186,148" stroke="#ffffff" stroke-width="1" fill="#b82e2e"></path></g><g><path d="M186,148L158.65227461567687,8.65832670624468A142,142,0,0,1,165.1280876106937,7.542307888769869L186,148A0,0,0,0,0,186,148" stroke="#ffffff" stroke-width="1" fill="#66aa00"></path></g><g><path d="M186,148L144.70956839225678,12.135728546294104A142,142,0,0,1,158.65227461567687,8.65832670624468L186,148A0,0,0,0,0,186,148" stroke="#ffffff" stroke-width="1" fill="#dd4477"></path></g><g><path d="M186,148L129.30094692924942,17.810840002401847A142,142,0,0,1,144.70956839225678,12.135728546294104L186,148A0,0,0,0,0,186,148" stroke="#ffffff" stroke-width="1" fill="#0099c6"></path></g><g><path d="M186,148L94.52154618603193,39.39202382971263A142,142,0,0,1,129.30094692924953,17.81084000240179L186,148A0,0,0,0,0,186,148" stroke="#ffffff" stroke-width="1" fill="#990099"></path></g><g><path d="M186,148L72.05128563468516,63.266945679434585A142,142,0,0,1,94.52154618603193,39.39202382971263L186,148A0,0,0,0,0,186,148" stroke="#ffffff" stroke-width="1" fill="#109618"></path></g><g><path d="M186,148L46.208314500675925,123.05436580765942A142,142,0,0,1,72.05128563468507,63.266945679434684L186,148A0,0,0,0,0,186,148" stroke="#ffffff" stroke-width="1" fill="#ff9900"></path><text text-anchor="start" x="70.42233409509191" y="111.4222843886507" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#ffffff">7.4%</text></g><g><path d="M186,148L80.67338451761782,243.23814399192378A142,142,0,0,1,46.208314500675925,123.05436580765942L186,148A0,0,0,0,0,186,148" stroke="#ffffff" stroke-width="1" fill="#dc3912"></path><text text-anchor="start" x="65.30035315217003" y="181.76068653675054" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#ffffff">14.5%</text></g><g><path d="M186,148L186,6A142,142,0,1,1,80.67338451761782,243.23814399192378L186,148A0,0,0,1,0,186,148" stroke="#ffffff" stroke-width="1" fill="#3366cc"></path><path d="M186,2A146,146,0,1,1,77.70643760262114,245.92090861141457" stroke="#3366cc" stroke-width="2" fill-opacity="1" fill="none"></path><text text-anchor="start" x="256.8863116517513" y="195.060719482769" font-family="Arial" font-size="16" stroke="none" stroke-width="0" fill="#ffffff">63.3%</text></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+<table><tbody><tr><th>Item</th><th>Cost</th></tr>
+<tr><td>Rent kr 4,930</td><td>4930</td></tr>
+<tr><td>Mad Science renovations kr 1.000</td></tr>
+<!--
+<tr><td>Business Rates £1,576</td><td>1576</td></tr>
+<tr><td>Electricity £800</td><td>800</td></tr>
+<tr><td>Service Charge £400</td><td>400</td></tr>
+<tr><td>Reserve £500</td><td>500</td></tr>
+<tr><td>Supplies £200</td><td>200</td></tr>
+<tr><td>Rubbish £175</td><td>175</td></tr>
+<tr><td>Cleaner £80</td><td>80</td></tr>
+<tr><td>Gas £80</td><td>80</td></tr>
+<tr><td>Lift Maintenance £80</td><td>80</td></tr>
+<tr><td>Internet/Phone £95</td><td>95</td></tr>
+-->
+</tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 310px; left: 610px; white-space: nowrap; font-family: Arial; font-size: 16px; font-weight: bold;">6875 (63.3%)</div><div></div></div>
+			</article>
+
+			<article>
+				<header>
+					<h2>How You Can Help</h2>
+				</header>
+				<ul>
+					<li><strong class="large"><a href="http://hackeriet.no/member">Join Hackeriet today!</a></strong> You'll get 24/7 access, a storage box for your projects, and warm fuzzy feelings for supporting us. We need members to pay an average kr 250/month for the space to survive.</li>
+					<li>If you're already a member, <strong class="large">increase your monthly subscription payment</strong> by some kroner.</li>
+					<li>Volunteer to run a workshop on your area of expertise, or help us keep our infrastructure in shape.</li>
+					<li>Let us know if there's something you'd like added to or changed in the Hackspace that would convince you to pay more each month.</li>
+				</ul>
+			</article>
+		</div>
+		<footer id="credits" role="contentinfo" class="text">
+			<hr>
+			<p>Income data from the membership DB is for the last full calendar month. Source: Hackeriet "<a href="https://procrastinate.delta9.pl/projects/hackeriet/wiki/Budget">Budget</a>" wiki page and the membership DB.</p>
+         <p>"Cost of Hacking" shamelessly ripped from the <a href="https://london.hackspace.org">London Hackspace</a>.</p>
+		</footer>
+	</div>
+
+
+</body></html>
