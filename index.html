@@ -14,17 +14,19 @@
 	function drawCharts() {
 		
 		// ===========
-		// = Balance =
+		// = Monthly Balance =
 		// ===========
 		var data = new google.visualization.DataTable();
 		data.addColumn('string', 'Month');
-		data.addColumn('number', 'Subscriptions');
-		data.addColumn('number', 'Expenses');
-		data.addColumn('number', 'Club Mate');
-		data.addColumn('number', 'T-Shirts');
-		data.addColumn('number', 'Kits');
+		data.addColumn('number', 'Total Income');
+		data.addColumn('number', 'Total Expenses');
+		data.addColumn('number', 'Income: Membership');
+		data.addColumn('number', 'Income: Club Mate');
+		data.addColumn('number', 'Income: Parties');
+		data.addColumn('number', 'Income: T-Shirts');
+		data.addColumn('number', 'Income: Kits');
 		data.addRows([
-				['Current', 1500, 6500, 240, 150, 250],
+				['Current', 2850, 5180, 2500, 350, 500, 50, 50],
 		]);
 
 		var options = {
@@ -46,10 +48,10 @@
 		data.addColumn('string', 'Item');
 		data.addColumn('number', 'Cost');
 		data.addRows([
-				['Rent kr 4.930', 6875],
-				//['Fiber internet kr 1.500', 1500],
-				['Mad Science Renovations kr 1.000', 1000],
+				['Rent kr 4.930', 4930],
+				['Maintenance kr 250', 250],
 				/*
+				['Fiber internet kr 1.500', 1500],
 				['Business Rates £1,576', 1576],
 				['Electricity £800', 800],
 				['Service Charge £400', 400],
@@ -137,10 +139,8 @@ We are no longer sharing the space with other groups.
 		</div>
 		<footer id="credits" role="contentinfo" class="text">
 			<hr>
-			<p>Income data from the membership DB is for the last full calendar month. Source: Hackeriet "<a href="https://procrastinate.delta9.pl/projects/hackeriet/wiki/Budget">Budget</a>" wiki page and the membership DB.</p>
+			<p>Income data from the membership DB is for the last full calendar month. Source: Hackeriet "<a href="https://procrastinate.delta9.pl/projects/hackeriet/wiki/Budget">Budget</a>" wiki page and the membership DB. Updated 2015-04-14</p>
          <p>"Cost of Hacking" shamelessly ripped from the <a href="https://london.hackspace.org">London Hackspace</a>.</p>
 		</footer>
 	</div>
-
-
 </body></html>
