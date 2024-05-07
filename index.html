@@ -17,58 +17,41 @@
 		// = Monthly Balance =
 		// ===========
 		var data = new google.visualization.DataTable();
-		data.addColumn('string', 'Month');
-		data.addColumn('number', 'Total Income');
-		data.addColumn('number', 'Total Expenses');
-		data.addColumn('number', 'Income: Membership');
-		data.addColumn('number', 'Income: Club Mate');
-		data.addColumn('number', 'Income: Parties');
-		data.addColumn('number', 'Income: T-Shirts');
-		data.addColumn('number', 'Income: Kits');
-		data.addRows([
-				['Current', 2850, 5180, 2500, 350, 500, 50, 50],
-		]);
+		data.addColumn("string", "Month");
+		data.addColumn("number", "Total Income");
+		data.addColumn("number", "Total Expenses");
+		data.addColumn("number", "Income: Membership");
+		data.addColumn("number", "Income: Nettlaug");
+		data.addColumn("number", "Income: Hausmania ISP");
+		data.addColumn("number", "Income: H42 ISP");
+		data.addRows([["Current", 13100, 14883, 8750, 2250, 1600, 500]]);
 
 		var options = {
-			axisTitlesPosition: 'none',
-			legend: { position: 'top' },
+			axisTitlesPosition: "none",
+			legend: { position: "top" },
 			hAxis: { viewWindow: { min: 0 } },
-			vAxis: { textPosition: 'none' },
-			chartArea: { left: 10, top: 30, width: "100%", height: "60%"},
-			fontSize: 16
+			vAxis: { textPosition: "none" },
+			chartArea: { left: 10, top: 30, width: "100%", height: "60%" },
+			fontSize: 16,
 		};
 
-		var chart = new google.visualization.BarChart(document.getElementById('balance_div'));
+		var chart = new google.visualization.BarChart(
+			document.getElementById("balance_div"),
+		);
 		chart.draw(data, options);
 
 		// ============
 		// = Expenses =
 		// ============
 		var data = new google.visualization.DataTable();
-		data.addColumn('string', 'Item');
-		data.addColumn('number', 'Cost');
+		data.addColumn("string", "Item");
+		data.addColumn("number", "Cost");
 		data.addRows([
-				['Rent kr 4.930', 4930],
-				['Maintenance kr 250', 250],
-				/*
-				['Fiber internet kr 1.500', 1500],
-				['Business Rates £1,576', 1576],
-				['Electricity £800', 800],
-				['Service Charge £400', 400],
-				['Reserve £500', 500],
-				['Supplies £200', 200],
-				['Rubbish £175', 175],
-				['Cleaner £80', 80],
-				['Gas £80', 80],
-				['Lift Maintenance £80', 80],
-				['Internet/Phone £95', 95],
-				['Reserve £500', 500],
-				['Rubbish £175', 175],
-				['Cleaner £80', 80],
-				['Gas £80', 80],
-				['Lift Maintenance £80', 80],
-				['Internet/Phone £95', 95],
-				*/
+			["Rent kr 9.249", 9249],
+			["Fiber internet kr 1.885", 1885],
+			["Electricity kr 2.500", 2500],
+			["Projects kr 833", 833],
+			["Maintenance kr 416", 416],
 		]);
 
 
